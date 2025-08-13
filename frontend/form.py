@@ -31,7 +31,7 @@ def create_result_title():
 def create_lables():
    stml.markdown('<div class="form-container">', unsafe_allow_html=True)
    topic = stml.text_input("Topic: ", placeholder = "e.g. beauty, makeup, skin care, health, etc")
-   platform = stml.selectbox("Platform: ", ["Instagram", "Facebook", "Blog", "E-mail"]) 
+   platform = stml.selectbox("Platform: ", ["Instagram", "X", "Facebook", "Blog", "E-mail"]) 
    tone = stml.selectbox("Message Tone: ", ["Informative", "Fun", "Urgent", "Inspirational"])
    length = stml.selectbox("Text Length: ", ["Short", "Medium", "Long"])
    audience = stml.selectbox("Target Audience: ", ["Young Adults", "Women", "Men", "Teenagers", "General"])
@@ -51,9 +51,9 @@ def create_execute_button(llm, prompt):
 
 def show_content_generated(model_output):
    create_result_title()
-   if "result" not in stml.session_state:
-      stml.session_state.result = ""
-      stml.info("Please, fill the form and click on the generation button.")
-   else:
+
+   if model_output is not None and model_output != "":
       stml.session_state.result = model_output
       stml.write(stml.session_state.result)
+   else:
+      stml.info("Please, fill the form and click on the generation button.")

@@ -2,7 +2,7 @@
 import streamlit as stml
 from dotenv import load_dotenv
 from utils.css import apply_css
-from llm.llm import define_llm, generate_prompt, execute_sample_llm
+from llm.llm import define_llm, generate_prompt
 from frontend.form import create_form_page, create_lables, create_execute_button, show_content_generated 
 
 load_dotenv()
@@ -23,7 +23,7 @@ def main():
   
   with left_col:
     form_values = create_lables()
-    if form_values != None:
+    if form_values is not None:
       prompt = generate_prompt(form_values)
       model_output = create_execute_button(llm, prompt)
 
