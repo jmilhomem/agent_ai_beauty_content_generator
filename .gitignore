@@ -1,0 +1,7 @@
+.git
+bkp*
+.env_original
+/frontend/bkp*
+/llm/bkp*
+/static/bkp*
+/utils/bkp*

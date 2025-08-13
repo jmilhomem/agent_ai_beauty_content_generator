@@ -1,0 +1,28 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.header-container {                   /*class*/
+    align-items: center;              /*align vertically to the center*/
+    justify-content: center;          /*align horizontally to the center*/
+    padding: 20px;                    /*internal space*/
+    border-bottom: 2px solid #ddd;  /*dividing line at the bottom: [width] [style] [color]*/
+}
+
+.form-container {                     /*class that group the form*/
+    padding: 20px;                    /*internal space*/
+    border-radius: 10px;              /*rounded corners*/
+}
+
+.stButton>button {
+    background-color: #007bff;      /*background for the button*/
+    color: white;                   /*color of the text*/
+    font-size: 16px;                  /*size of the text*/
+    border-radius: 8px;               /*rounded corners*/
+    padding: 8px 16px;                /*internal space*/
+    border: none;                     /*no border*/
+}
+
+.stButton>button:hover {              /*.hover = mouseover effect*/
+    background-color: #0056b3;               
+}
