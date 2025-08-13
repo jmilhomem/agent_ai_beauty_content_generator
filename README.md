@@ -1,4 +1,4 @@
-# Agent AI for Social Media Generator
+# Agent AI to generate content about Beauty for Social Media
 > This application is responsible for:
 > 1. Create a form with defined parameters for the content generator, based on the business needs in order to support any type of business necessity.  
 > 2. Generate the prompt using the parameters inputed in the form.
