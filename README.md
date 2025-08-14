@@ -14,8 +14,9 @@ Although it demands a long period of effort, one of the responsibilities is to g
 Thus, it's important for the Marketing team to automate the generation of the content task to reduce effort from the professionals to evaluate the content generated and publish it with as much as intelligence as possible. Then, save time to focus on more strategic activities.
 
 ## Technical details:
-- __Front End__: Created with Streamlit lib from Python and CSS for format.
-- __Backend and LLM__: The application is created in Python, and the model used in this project is the _llama_, consumed via API from the provider Groq.
+- __Front End__: Python, Streamlit and CSS for formatting.
+- __Backend and LLM__: Application that generates beauty-related content using Llama models via Groq API and LangChain for orchestration.
+- __Infrastructure__: Containerized with Docker for easy deployment
 
 ## Dependencies:
 To execute the whole pipeline (dbt seed, dbt run and dbt test):
